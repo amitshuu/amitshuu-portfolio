@@ -15,5 +15,5 @@ body {
 }
 
 .section-center {
-  @apply lg:px-28;
+  @apply px-2 lg:px-28;
 }

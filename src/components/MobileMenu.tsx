@@ -7,7 +7,7 @@ type Props = {
 };
 const MobileMenu = ({ setOpenMobileNav }: Props) => {
   return (
-    <nav className='flex md:hidden flex-col sticky w-full z-50 top-0 bg-dark-bg items-center'>
+    <nav className='flex md:hidden flex-col sticky w-full z-50 top-0 bg-dark-bg items-center px-2'>
       <div className='flex justify-between py-10 px-5 w-full'>
         <p className=' text-4xl text-white'>amitshuu</p>
         <AiOutlineClose

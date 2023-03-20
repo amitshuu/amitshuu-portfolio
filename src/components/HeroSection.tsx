@@ -5,10 +5,10 @@ const HeroSection = () => {
   return (
     <section className='flex section-center'>
       <div className='flex flex-col relative z-10 flex-wrap w-full m-0 justify-center items-center xl:items-start pt-10 '>
-        <p className='py-5 text-6xl  text-white'>
+        <p className='py-5 text-5xl  text-white'>
           Hello, <span className='text-primary-blue'>I'm</span>
         </p>
-        <p className=' text-3xl xl:text-5xl pb-5 text-white'>Amit Shukrun</p>
+        <p className=' text-4xl xl:text-5xl pb-5 text-white'>Amit Shukrun</p>
         <p className='  xl:text-4xl text-white text-3xl text-center xl:text-start'>
           And i'm a{' '}
           <span className='text-primary-blue'>Fullstack Web Developer</span>
