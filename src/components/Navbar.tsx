@@ -1,5 +1,5 @@
 import { nav_link } from '../constants/constants_links';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import MobileMenu from './MobileMenu';
 import { useMobile } from '../hooks/customHooks';
@@ -7,7 +7,7 @@ import { useMobile } from '../hooks/customHooks';
 const Navbar = () => {
   const [openMobileNav, setOpenMobileNav] = useState(false);
 
-  const { isMobile } = useMobile(() => setOpenMobileNav(false));
+  useMobile(() => setOpenMobileNav(false));
 
   return (
     <>

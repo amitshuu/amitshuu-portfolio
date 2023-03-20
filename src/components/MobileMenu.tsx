@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { nav_link } from '../constants/constants_links';
 

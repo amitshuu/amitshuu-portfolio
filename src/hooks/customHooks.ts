@@ -19,7 +19,5 @@ export const useMobile = (callback: VoidFunction) => {
       callback();
     }
     return () => window.removeEventListener('resize', handleResize);
-  }, [isMobile]);
-
-  return { isMobile };
+  }, [isMobile, callback]);
 };
