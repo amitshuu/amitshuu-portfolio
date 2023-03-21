@@ -1,5 +1,7 @@
 import React from 'react';
-import about from '../assets/about_me_image.png';
+import about from '../assets/about_me_image2.png';
+// import test from '../assets/dev-interface.png';
+// import test from '../assets/optimization.png';
 const AboutSection = () => {
   return (
     <section className='flex justify-between items-center py-10 bg-primary-section mt-20 section-center w-full'>
@@ -15,16 +17,19 @@ const AboutSection = () => {
           About <span className='text-primary-blue'>Me</span>
         </p>
         <p className='text-gray-300 xl:text-xl xl:w-full xl:text-start font-normal text-md w-5/6 text-center mb-5'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque maxime
-          magnam dignissimos aperiam perspiciatis nam earum, autem eum
-          voluptatum praesentium necessitatibus, cupiditate, nemo quisquam
-          itaque odit voluptatem eius? Nisi, accusamus? Aperiam, quas. At veniam
-          quas, eos minus maxime quis odit impedit sint reiciendis vitae
-          quibusdam. Cumque, doloribus delectus porro tenetur inventore
-          reiciendis quod iure nam neque. Labore, dolorem aspernatur?
-          Recusandae?
+          Hi, my name is Amit, and I'm a 23-year-old full-stack web developer
+          with expertise in both front-end and back-end development. I
+          specialize in a range of technologies, including JavaScript,
+          TypeScript, React, Node.js, REST Api, GraphQL and MongoDB, and I'm
+          always eager to learn more. When I'm not working on web development
+          projects, I enjoy surfing and hitting the gym to stay active and
+          healthy. I'm passionate about building user-friendly web applications
+          and love collaborating with others to bring ideas to life. Whether I'm
+          designing a sleek front-end interface or working on complex back-end
+          functionality, I'm always striving to deliver high-quality results.
         </p>
       </div>
+      {/* <img src={test} className=' w-80' /> */}
     </section>
   );
 };
