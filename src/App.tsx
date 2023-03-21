@@ -1,6 +1,7 @@
 import AboutSection from './components/AboutSection';
 import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
+import ServicesSection from './components/ServicesSection';
 
 const App = () => {
   return (
@@ -8,7 +9,7 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <HeroSection />
+      <ServicesSection />
     </main>
   );
 };
