@@ -11,6 +11,18 @@ module.exports = {
         'primary-blue-darker': '#0d949e',
         'primary-section': '#171C23',
       },
+      fontSize: {
+        dynamic: 'clamp(0rem, 10vw, 0.8rem)',
+      },
+      minHeight: {
+        customMinHeight: '250px',
+      },
+      minWidth: {
+        customMinHeight: '50px',
+      },
+      maxWidth: {
+        customMaxWidth: '200px',
+      },
     },
   },
   plugins: [],

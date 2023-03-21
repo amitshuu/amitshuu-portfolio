@@ -9,6 +9,9 @@
 }
 
 body {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
   font-family: 'Lato', sans-serif;
   font-family: 'Poppins', sans-serif;
   font-family: 'Varela Round', sans-serif;

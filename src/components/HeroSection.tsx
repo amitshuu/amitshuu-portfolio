@@ -20,11 +20,11 @@ const HeroSection = () => {
         </p>
         <div className='flex flex-col items-center xl:items-start '>
           <div className='flex flex-row mb-5'>
-            <button className='hover:bg-primary-blue-hover mr-5 text-black bg-primary-blue py-3 px-3 rounded-lg transition-colors duration-300'>
+            <button className='hover:bg-primary-blue-hover mr-5 text-black bg-primary-blue py-3 px-3 rounded-lg transition-all hover:trasnform hover:scale-105 duration-100'>
               Download CV
             </button>
-            <button className='hover:bg-primary-blue-hover text-black bg-primary-blue py-3 px-3 rounded-lg transition-colors duration-300'>
-              Let's Talk
+            <button className='hover:bg-primary-blue-hover mr-5 text-black bg-primary-blue py-3 px-3 rounded-lg transition-all hover:transform hover:scale-105 duration-100 '>
+              Let's talk
             </button>
           </div>
           <div className='w-full flex justify-center'>

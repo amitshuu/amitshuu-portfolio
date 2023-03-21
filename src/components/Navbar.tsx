@@ -22,7 +22,7 @@ const Navbar = () => {
             : 'flex justify-between py-10 sticky top-0 z-50  bg-dark-bg md:relative items-center section-center px-2'
         }`}
       >
-        <div className='flex w-full justify-between px-5'>
+        <div className='flex w-full justify-between px-2 lg:px-0 '>
           <p className='text-4xl text-white'>amitshuu</p>
           <AiOutlineMenu
             onClick={() => setOpenMobileNav(true)}

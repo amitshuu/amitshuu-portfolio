@@ -7,9 +7,9 @@ const SocialLinks = () => {
         Connect with me on:{' '}
       </p>
       <div className='flex px-6 '>
-        <AiFillLinkedin className='text-primary-blue text-6xl p-4  mx-2 border-2 border-primary-blue hover:bg-primary-blue transition-colors duration-300 cursor-pointer  hover:text-black rounded-full ' />
-        <AiFillGithub className='text-primary-blue text-6xl p-4  mx-2 border-2 border-primary-blue hover:bg-primary-blue transition-colors duration-300 cursor-pointer hover:text-black rounded-full ' />
-        <BsWhatsapp className='text-primary-blue text-6xl p-4  mx-2 border-2 border-primary-blue hover:bg-primary-blue transition-colors duration-300 cursor-pointer hover:text-black rounded-full  ' />
+        <AiFillLinkedin className='text-primary-blue text-6xl p-4  mx-2 border-2 border-primary-blue hover:bg-primary-blue transition-all duration-100 cursor-pointer  hover:text-black rounded-full hover:transform hover:scale-110  ' />
+        <AiFillGithub className='text-primary-blue text-6xl p-4  mx-2 border-2 border-primary-blue hover:bg-primary-blue transition-all duration-100 cursor-pointer hover:text-black rounded-full hover:transform hover:scale-110 ' />
+        <BsWhatsapp className='text-primary-blue text-6xl p-4  mx-2 border-2 border-primary-blue hover:bg-primary-blue transition-all duration-100 cursor-pointer hover:text-black rounded-full hover:transform hover:scale-110  ' />
       </div>
     </article>
   );
