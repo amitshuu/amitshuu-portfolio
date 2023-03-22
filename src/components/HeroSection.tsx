@@ -1,5 +1,6 @@
 import shuki_hero_image from '../assets/shuki_hero_image.png';
 import SocialLinks from './SocialLinks';
+import { Typewriter } from 'react-simple-typewriter';
 
 const HeroSection = () => {
   return (
@@ -11,7 +12,13 @@ const HeroSection = () => {
         <p className=' text-4xl xl:text-5xl pb-5 text-white'>Amit Shukrun</p>
         <p className='  xl:text-4xl text-white text-3xl text-center xl:text-start'>
           And i'm a{' '}
-          <span className='text-primary-blue'>Fullstack Web Developer</span>
+          <span className='text-primary-blue'>
+            <Typewriter
+              loop={false}
+              cursor={true}
+              words={['Fullstack Web Developer.']}
+            />
+          </span>
         </p>
         <p className='text-xl py-6 text-gray-300 text-center xl:text-start'>
           Greetings! I'm Amit Shukrun, a Fullstack Web Developer. <br /> I'm
@@ -34,7 +41,7 @@ const HeroSection = () => {
       </div>
       <div className='flex '>
         <img
-          className='hidden xl:block max-w-lg'
+          className='hidden xl:block max-w-lg animate-up-down'
           src={shuki_hero_image}
           alt='Hero Img'
         />
