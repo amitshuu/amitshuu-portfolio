@@ -4,7 +4,7 @@ import { IProject } from '../constants/types';
 
 const ProjectCard = ({ projectName, projectDesc, projectImage }: IProject) => {
   return (
-    <article className='block  max-w-[350px] bg-dark-bg border border-gray-100 rounded-lg shadow mx-6 transition-transform hover:transform-gpu hover:scale-105 duration-200 cursor-pointer h-full'>
+    <article className='block  max-w-[350px] bg-dark-bg border border-gray-100 rounded-lg shadow mx-6 transition-transform hover:transform-cpu hover:scale-105 duration-200 cursor-pointer h-full'>
       <img
         className='rounded-t-lg w-full min-h-[225px] object-fill'
         src={projectImage}

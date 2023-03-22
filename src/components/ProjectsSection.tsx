@@ -7,7 +7,7 @@ import { IProject } from '../constants/types';
 
 const ProjectsSection = () => {
   return (
-    <section className='bg-primary-section w-full text-center section-center  py-20 '>
+    <section className='bg-primary-section w-full text-center section-center py-14 '>
       <div className='flex flex-col justify-center items-center'>
         <p className='text-4xl lg:text-6xl text-center mb-4 text-white'>
           Recent <span className='text-primary-blue'>Projects</span>
@@ -22,7 +22,7 @@ const ProjectsSection = () => {
       <div className='relative pb-10'>
         <Carousel
           additionalTransfrom={0}
-          arrows
+          arrows={true}
           rtl={false}
           autoPlaySpeed={3000}
           className={`py-5`}
