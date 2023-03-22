@@ -2,6 +2,9 @@ import webDevIcon from '../assets/optimization.png';
 import optimization from '../assets/optimization2.png';
 import shopify from '../assets/shopify.png';
 
+import SneakersShop from '../assets/Products.png';
+import MessengerApp from '../assets/Main.png';
+import Yaniv from '../assets/KidsInMotion.png';
 export const nav_link = [
   {
     name: 'Home',
@@ -35,5 +38,26 @@ export const services_links = [
     serviceIcon: optimization,
     serviceDescription:
       'I provide ongoing website maintenance and optimization services, fixing bugs, improving speed and performance, to ensure your site runs efficiently and meets your business goals.',
+  },
+];
+
+export const projects_links = [
+  {
+    projectName: 'Sneakers Shop',
+    projectDesc:
+      'This is a sample application that demonstrates an E-commerce website using the MEAN stack.',
+    projectImage: SneakersShop,
+  },
+  {
+    projectName: 'Messenger App',
+    projectDesc:
+      'This is a sample application that demonstrates a whatsapp web application using the MERN stack.',
+    projectImage: MessengerApp,
+  },
+  {
+    projectName: 'Kids In Motion',
+    projectDesc:
+      'Check out Yaniv new landing page built with simplicity and elegance in mind to showcase their unique service.',
+    projectImage: Yaniv,
   },
 ];
