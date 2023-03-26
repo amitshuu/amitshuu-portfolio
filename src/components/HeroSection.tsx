@@ -4,13 +4,13 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const HeroSection = () => {
   return (
-    <section className='flex section-center'>
-      <div className='flex flex-col relative z-10 flex-wrap w-full m-0 justify-center items-center xl:items-start pt-10 '>
-        <p className='py-5 text-5xl  text-white'>
+    <section className='flex flex-col xl:flex-row section-center'>
+      <div className='relative z-10 flex flex-col flex-wrap items-center justify-center w-full pt-10 m-0 xl:items-start '>
+        <p className='py-5 text-5xl text-white'>
           Hello, <span className='text-primary-blue'>I'm</span>
         </p>
-        <p className=' text-4xl xl:text-5xl pb-5 text-white'>Amit Shukrun</p>
-        <p className='  xl:text-4xl text-white text-3xl text-center xl:text-start'>
+        <p className='pb-5 text-4xl text-white xl:text-5xl'>Amit Shukrun</p>
+        <p className='text-3xl text-center text-white xl:text-4xl xl:text-start'>
           And i'm a{' '}
           <span className='text-primary-blue'>
             <Typewriter
@@ -20,28 +20,28 @@ const HeroSection = () => {
             />
           </span>
         </p>
-        <p className='text-xl py-6 text-gray-300 text-center xl:text-start'>
+        <p className='py-6 text-xl text-center text-gray-300 xl:text-start'>
           Greetings! I'm Amit Shukrun, a Fullstack Web Developer. <br /> I'm
           thrilled to present my portfolio to you and I look forward <br /> to
           working with you on your next project.
         </p>
         <div className='flex flex-col items-center xl:items-start '>
           <div className='flex flex-row mb-5'>
-            <button className='hover:bg-primary-blue-hover mr-5 text-black bg-primary-blue py-3 px-3 rounded-lg transition-all hover:trasnform hover:scale-105 duration-100'>
+            <button className='px-3 py-3 mr-5 text-black transition-all duration-100 rounded-lg hover:bg-primary-blue-hover bg-primary-blue hover:trasnform hover:scale-105'>
               Download CV
             </button>
-            <button className='hover:bg-primary-blue-hover mr-5 text-black bg-primary-blue py-3 px-3 rounded-lg transition-all hover:transform hover:scale-105 duration-100 '>
+            <button className='px-3 py-3 mr-5 text-black transition-all duration-100 rounded-lg hover:bg-primary-blue-hover bg-primary-blue hover:transform hover:scale-105 '>
               Let's talk
             </button>
           </div>
-          <div className='w-full flex justify-center'>
+          <div className='flex justify-center w-full mb-6 xl:mb-0'>
             <SocialLinks />
           </div>
         </div>
       </div>
-      <div className='flex '>
+      <div className='flex items-center justify-center pt-10 '>
         <img
-          className='hidden xl:block max-w-lg animate-up-down'
+          className='max-w-sm xl:max-w-lg xl:block animate-up-down'
           src={shuki_hero_image}
           alt='Hero Img'
         />

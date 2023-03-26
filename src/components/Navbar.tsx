@@ -22,14 +22,14 @@ const Navbar = () => {
             : 'flex justify-between py-10 sticky top-0 z-50  bg-dark-bg md:relative items-center section-center'
         }`}
       >
-        <div className='flex w-full justify-between px-4 lg:px-0 '>
+        <div className='flex justify-between w-full px-4 lg:px-0 '>
           <p className='text-4xl text-white'>amitshuu</p>
           <AiOutlineMenu
             onClick={() => setOpenMobileNav(true)}
-            className='flex md:hidden text-4xl text-primary-blue cursor-pointer hover:text-primary-blue-hover'
+            className='flex text-4xl cursor-pointer md:hidden text-primary-blue hover:text-primary-blue-hover'
           />
         </div>
-        <ul className='text-lg px-10 cursor-pointer hidden md:flex'>
+        <ul className='hidden px-10 text-lg cursor-pointer md:flex'>
           {nav_link.map((navLink: { name: string }) => {
             return (
               <li
