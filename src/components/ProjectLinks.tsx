@@ -1,19 +1,13 @@
-import { IconType } from 'react-icons';
+import { AiFillGithub } from 'react-icons/ai';
+import { BsYoutube } from 'react-icons/bs';
+import { TbWorldWww } from 'react-icons/tb';
+import { IUsefulLinks } from '../constants/types';
 
-interface IUsefulLink {
-  websiteUrl?: string;
-  gitRepo?: string;
-  youtubeLink?: string;
-  websiteIcon?: IconType;
-  gitIcon?: IconType;
-  youtubeIcon?: IconType;
-}
+type Props = {
+  links: IUsefulLinks[];
+};
 
-interface IUsefulLinksProps {
-  links: IUsefulLink[];
-}
-
-const ProjectLinks = ({ links }: IUsefulLinksProps) => {
+const ProjectLinks = ({ links }: Props) => {
   return (
     <div className='flex w-full'>
       {links.map((link) => (
@@ -21,19 +15,19 @@ const ProjectLinks = ({ links }: IUsefulLinksProps) => {
           key={link.websiteUrl || link.gitRepo || link.youtubeLink}
           className='flex'
         >
-          {link.gitIcon && (
+          {link.gitRepo && (
             <a href={link.gitRepo} target='_blank'>
-              <link.gitIcon className='mr-3 text-3xl transition-all duration-100 rounded-lg cursor-pointer text-primary-blue hover:text-primary-blue-hover hover:transform hover:scale-105 ' />
+              <AiFillGithub className='mr-3 text-3xl transition-all duration-100 rounded-lg cursor-pointer text-primary-blue hover:text-primary-blue-hover hover:transform hover:scale-105 ' />
             </a>
           )}
-          {link.websiteIcon && (
+          {link.websiteUrl && (
             <a href={link.websiteUrl} target='_blank'>
-              <link.websiteIcon className='mr-3 text-3xl transition-all duration-100 rounded-lg cursor-pointer text-primary-blue hover:text-primary-blue-hover hover:transform hover:scale-105 ' />
+              <TbWorldWww className='mr-3 text-3xl transition-all duration-100 rounded-lg cursor-pointer text-primary-blue hover:text-primary-blue-hover hover:transform hover:scale-105 ' />
             </a>
           )}
-          {link.youtubeIcon && (
+          {link.youtubeLink && (
             <a href={link.youtubeLink} target='_blank'>
-              <link.youtubeIcon className='mr-3 text-3xl transition-all duration-100 rounded-lg cursor-pointer text-primary-blue hover:text-primary-blue-hover hover:transform hover:scale-105 ' />
+              <BsYoutube className='mr-3 text-3xl transition-all duration-100 rounded-lg cursor-pointer text-primary-blue hover:text-primary-blue-hover hover:transform hover:scale-105 ' />
             </a>
           )}
         </div>
