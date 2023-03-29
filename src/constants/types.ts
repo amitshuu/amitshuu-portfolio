@@ -12,12 +12,11 @@ export interface IProject {
   projectDesc: string;
   projectSubImages?: string[];
   projectCategory: string;
-  usefulLinks?: {
-    websiteUrl?: string;
-    gitRepo?: string;
-    youtubeLink?: string;
-    websiteIcon?: IconType;
-    gitIcon?: IconType;
-    youtubeIcon?: IconType;
-  }[];
+  usefulLinks?: IUsefulLinks[];
+}
+
+export interface IUsefulLinks {
+  websiteUrl?: string;
+  gitRepo?: string;
+  youtubeLink?: string;
 }
