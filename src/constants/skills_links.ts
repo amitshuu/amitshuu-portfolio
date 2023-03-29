@@ -8,6 +8,8 @@ import mongo from '../assets/SkillsIcons/mongodb.png';
 import react from '../assets/SkillsIcons/react.png';
 import express from '../assets/SkillsIcons/Status_iucn_EX_icon.svg.png';
 import shopify from '../assets/SkillsIcons/UWLT3CZD62CU.png';
+import mui from '../assets/SkillsIcons/mui.png';
+import tailwind from '../assets/SkillsIcons/tailwind.png';
 
 export const skills = [
   {
@@ -45,5 +47,17 @@ export const skills = [
   {
     icon: shopify,
     title: 'shopify',
+  },
+  {
+    icon: ts,
+    title: 'ts',
+  },
+  {
+    icon: mui,
+    title: 'mui',
+  },
+  {
+    icon: tailwind,
+    title: 'tailwind',
   },
 ];
