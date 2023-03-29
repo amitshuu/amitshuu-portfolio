@@ -14,7 +14,7 @@ const AboutSection = () => {
         />
       </div>
       <div className='flex flex-col items-center'>
-        <p className='py-4 text-4xl text-white lg:text-6xl '>
+        <p className='py-4 text-5xl text-white lg:text-6xl '>
           About <span className='text-primary-blue'>Me</span>
         </p>
         <p className='hidden mb-5 font-normal text-center text-gray-300 md:block md:text-lg xl:w-3/4 text-md'>
@@ -29,7 +29,7 @@ const AboutSection = () => {
           designing a sleek front-end interface or working on complex back-end
           functionality, I'm always striving to deliver high-quality results.
         </p>
-        <p className='block font-normal text-center text-gray-300 md:hidden xl:w-3/4 text-md'>
+        <p className='block text-lg font-normal leading-normal text-center text-gray-300 md:hidden xl:w-3/4'>
           I'm Amit, a 23-year-old full-stack web developer with expertise in
           front-end and back-end development. I'm skilled in JavaScript, React,
           Node.js, and MongoDB, among other technologies. I enjoy building

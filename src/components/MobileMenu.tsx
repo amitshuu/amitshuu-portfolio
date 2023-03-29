@@ -7,19 +7,19 @@ type Props = {
 };
 const MobileMenu = ({ setOpenMobileNav }: Props) => {
   return (
-    <nav className='flex md:hidden flex-col sticky w-full z-50 top-0 bg-dark-bg items-center px-4'>
-      <div className='flex justify-between py-10 px-4 w-full'>
-        <p className=' text-4xl text-white'>amitshuu</p>
+    <nav className='sticky top-0 z-50 flex flex-col items-center w-full px-4 md:hidden bg-dark-bg'>
+      <div className='flex justify-between w-full px-4 py-10'>
+        <p className='text-4xl text-white '>amitshuu</p>
         <AiOutlineClose
           onClick={() => setOpenMobileNav(false)}
-          className='flex md:hidden text-4xl text-red-500 cursor-pointer hover:text-red-400'
+          className='flex text-4xl text-red-500 cursor-pointer md:hidden hover:text-red-400'
         />
       </div>
-      <ul className='flex flex-col justify-center items-center bg-primary-section w-full mb-10'>
+      <ul className='flex flex-col items-center justify-center w-full mb-10 bg-primary-section'>
         {nav_link.map((navLink: { name: string }) => {
           return (
             <li
-              className='py-4 text-xl cursor-pointer text-white'
+              className='py-4 text-xl text-white cursor-pointer'
               key={navLink.name}
             >
               {navLink.name}

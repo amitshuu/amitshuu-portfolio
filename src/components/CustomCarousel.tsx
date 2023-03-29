@@ -10,7 +10,6 @@ const CustomCarousel = ({ children }: { children: any }) => {
       additionalTransfrom={0}
       arrows={true}
       rtl={false}
-      autoPlaySpeed={3000}
       className={` py-6 `}
       containerClass={` `}
       dotListClass='dot'
@@ -18,8 +17,6 @@ const CustomCarousel = ({ children }: { children: any }) => {
       focusOnSelect={false}
       infinite={true}
       itemClass={`flex item-center justify-center`}
-      keyBoardControl
-      minimumTouchDrag={80}
       pauseOnHover
       renderDotsOutside={true}
       renderArrowsWhenDisabled={false}
@@ -50,13 +47,10 @@ const CustomCarousel = ({ children }: { children: any }) => {
           partialVisibilityGutter: 20,
         },
       }}
-      rewind={false}
-      rewindWithAnimation={false}
-      shouldResetAutoplay
       showDots={true}
       sliderClass=''
       slidesToSlide={1}
-      swipeable
+      swipeable={false}
     >
       {children}
     </Carousel>

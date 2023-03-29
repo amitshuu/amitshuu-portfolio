@@ -6,18 +6,22 @@ const HeroSection = () => {
   return (
     <section className='flex flex-col xl:flex-row section-center'>
       <div className='relative z-10 flex flex-col flex-wrap items-center justify-center w-full pt-10 m-0 xl:items-start '>
-        <p className='py-5 text-5xl text-white'>
+        <p className='py-5 text-4xl text-white md:text-5xl'>
           Hello, <span className='text-primary-blue'>I'm</span>
         </p>
-        <p className='pb-5 text-4xl text-white xl:text-5xl'>Amit Shukrun</p>
-        <p className='text-3xl text-center text-white xl:text-4xl xl:text-start'>
+        <p className='pb-5 text-4xl text-white md:text-4xl xl:text-5xl'>
+          Amit Shukrun
+        </p>
+        <p className='text-2xl text-center text-white md:text-3xl xl:text-4xl xl:text-start'>
           And i'm a{' '}
           <span className='text-primary-blue'>
-            <Typewriter
-              loop={false}
-              cursor={true}
-              words={['Fullstack Web Developer.']}
-            />
+            <div className=''>
+              <Typewriter
+                loop={false}
+                cursor={true}
+                words={['Fullstack Web Developer.']}
+              />
+            </div>
           </span>
         </p>
         <p className='py-6 text-xl text-center text-gray-300 xl:text-start'>
@@ -41,7 +45,7 @@ const HeroSection = () => {
       </div>
       <div className='flex items-center justify-center pt-10 '>
         <img
-          className='max-w-sm xl:max-w-lg xl:block animate-up-down'
+          className='max-w-xs xl:max-w-lg xl:block animate-up-down'
           src={shuki_hero_image}
           alt='Hero Img'
         />

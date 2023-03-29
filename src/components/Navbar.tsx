@@ -19,7 +19,7 @@ const Navbar = () => {
         className={`${
           openMobileNav
             ? 'hidden'
-            : 'flex justify-between py-10 sticky top-0 z-50  bg-dark-bg md:relative items-center section-center'
+            : 'flex justify-between py-10 sticky top-0 z-50 shadow-md bg-dark-bg md:relative items-center section-center'
         }`}
       >
         <div className='flex justify-between w-full px-4 lg:px-0 '>
