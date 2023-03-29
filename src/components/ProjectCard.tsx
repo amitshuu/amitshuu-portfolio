@@ -1,30 +1,53 @@
 import React from 'react';
-import test from '../assets/Products.png';
 import { IProject } from '../constants/types';
 
-const ProjectCard = ({ projectName, projectDesc, projectImage }: IProject) => {
+type Props = {
+  project: IProject;
+  handleModal: (projectInfo: IProject) => void;
+};
+
+const ProjectCard = ({ project, handleModal }: Props) => {
   return (
-    <article className='block  max-w-[350px] bg-dark-bg border border-gray-100 rounded-lg shadow mx-6 transition-transform hover:transform-cpu hover:scale-105 duration-200 cursor-pointer h-full'>
-      <img
-        className='rounded-t-lg w-full min-h-[225px] object-fill'
-        src={projectImage}
-        alt=''
-      />
-      <div className='p-5 w-full'>
-        <a href='#'>
-          <h5 className='mb-2 text-2xl font-bold tracking-tight border-b-2 border-primary-blue inline-block text-white dark:text-white'>
-            {projectName}
-          </h5>
-        </a>
-        <p className='mb-3 font-normal text-gray-300 dark:text-gray-400 h-20 text-elipse-custom '>
-          {projectDesc}
-        </p>
-        <a
-          href='#'
-          className='inline-flex items-center px-6 py-2 text-sm text-center text-black bg-primary-blue rounded-lg hover:bg-primary-blue-hover transition-colors duration-100'
-        >
-          Read more
-        </a>
+    <article
+      onClick={() => handleModal(project)}
+      className='max-w-full px-8 transition-transform cursor-pointer hover:transform hover:scale-105'
+    >
+      <div className='block w-full h-full max-w-sm overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60'>
+        <img
+          className='object-fill object-center w-full lg:h-52 md:h-36 h-36'
+          src={project.projectImage}
+          alt='project image'
+        />
+        <div className='h-full bg-dark-bg'>
+          <div className='px-5 py-3 md:p-6 '>
+            <h2 className='mb-1 text-xs font-medium tracking-widest text-gray-400 title-font'>
+              FULLSTACK
+            </h2>
+            <h1 className='inline-block mb-3 text-lg font-medium text-white border-b-2 title-font border-primary-blue'>
+              {project.projectName}
+            </h1>
+            <p className='w-full mb-3 leading-relaxed text-gray-300 text-elipse-custom md:max-h-20'>
+              {project.projectDesc}
+            </p>
+            <div className='flex flex-wrap items-center flex-grow w-full h-full '>
+              <a className='inline-flex items-center transition-colors duration-200 ease-in-out cursor-pointer text-primary-blue md:mb-2 lg:mb-0'>
+                Learn More
+                <svg
+                  className='w-4 h-4 ml-2'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  fill='none'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                >
+                  <path d='M5 12h14'></path>
+                  <path d='M12 5l7 7-7 7'></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </article>
   );
