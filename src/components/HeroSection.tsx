@@ -31,10 +31,10 @@ const HeroSection = () => {
         </p>
         <div className='flex flex-col items-center xl:items-start '>
           <div className='flex flex-row mb-5'>
-            <button className='px-3 py-3 mr-5 text-black transition-all duration-100 rounded-lg hover:bg-primary-blue-hover bg-primary-blue hover:trasnform hover:scale-105'>
+            <button className='px-3 py-3 mr-5 text-lg text-black transition-all duration-100 rounded-lg hover:bg-primary-blue-hover bg-primary-blue hover:trasnform hover:scale-105'>
               Download CV
             </button>
-            <button className='px-3 py-3 mr-5 text-black transition-all duration-100 rounded-lg hover:bg-primary-blue-hover bg-primary-blue hover:transform hover:scale-105 '>
+            <button className='px-3 py-3 mr-5 text-lg text-black transition-all duration-100 rounded-lg hover:bg-primary-blue-hover bg-primary-blue hover:transform hover:scale-105 '>
               Let's talk
             </button>
           </div>
