@@ -3,9 +3,9 @@ import { skills } from '../constants/skills_links';
 
 const SkillsSection = () => {
   return (
-    <section className='flex items-center justify-center py-20 bg-dark-bg'>
+    <section className='flex items-center justify-center px-4 py-20 md:px-8 bg-dark-bg'>
       <div className='container flex flex-col items-center justify-center'>
-        <h1 className='mb-6 text-5xl text-white md:text-7xl'>
+        <h1 className='mb-6 text-4xl text-white md:text-7xl'>
           Technology
           <span className=' text-primary-blue'> Stack</span>
         </h1>
@@ -17,7 +17,7 @@ const SkillsSection = () => {
           deliver innovative solutions that drive growth and enhance user
           experiences.
         </p>
-        <article className='flex flex-wrap items-center justify-center max-w-2xl gap-10 p-10 '>
+        <article className='flex flex-wrap items-center justify-center max-w-4xl gap-10 py-10 '>
           {skills.map((skill) => {
             return (
               <div className='flex flex-col items-center justify-center '>

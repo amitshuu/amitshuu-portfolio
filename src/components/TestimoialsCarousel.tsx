@@ -22,7 +22,7 @@ const TestimoialsCarousel = ({
       >
         {testimonials.map((item, index) => {
           return (
-            <article className='flex flex-col items-center justify-center flex-shrink-0 w-full p-10 mt-10 rounded-lg overflow-none bg-dark-bg'>
+            <article className='flex flex-col items-center justify-center flex-shrink-0 w-full mt-12 rounded-lg md:mt-10 md:p-10 overflow-none md:bg-dark-bg'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='currentColor'
@@ -52,6 +52,20 @@ const TestimoialsCarousel = ({
             </article>
           );
         })}
+      </div>
+      <div className='absolute top-0 left-0 right-0 z-50 flex items-center justify-between p-4 md:hidden bottom-20'>
+        <button
+          onClick={handlePrevButton}
+          className='text-xl rounded-full shadow text-black/80 w-11 h-11 bg-white/50 '
+        >
+          {'<'}
+        </button>
+        <button
+          onClick={handleNextButton}
+          className='text-xl rounded-full text-black/80 w-11 h-11 bg-white/50 '
+        >
+          {'>'}
+        </button>
       </div>
       <div className='flex items-center justify-center gap-2 text-center '>
         {testimonials.map((t, i) => {
