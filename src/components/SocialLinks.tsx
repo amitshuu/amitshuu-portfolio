@@ -1,15 +1,15 @@
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { MdEmail } from 'react-icons/md';
 import { BsWhatsapp } from 'react-icons/bs';
 const SocialLinks = () => {
   return (
-    <article className='flex mt-6 items-center w-full'>
-      <p className='hidden lg:block text-2xl text-white'>
-        Connect with me on:{' '}
-      </p>
+    <article className='flex items-center justify-center w-full mt-6'>
+      <p className='hidden text-2xl text-white xl:block'>Connect with me on:</p>
       <div className='flex px-6 '>
-        <AiFillLinkedin className='text-primary-blue text-6xl p-4  mx-2 border-2 border-primary-blue hover:bg-primary-blue transition-all duration-100 cursor-pointer  hover:text-black rounded-full hover:transform hover:scale-110  ' />
-        <AiFillGithub className='text-primary-blue text-6xl p-4  mx-2 border-2 border-primary-blue hover:bg-primary-blue transition-all duration-100 cursor-pointer hover:text-black rounded-full hover:transform hover:scale-110 ' />
-        <BsWhatsapp className='text-primary-blue text-6xl p-4  mx-2 border-2 border-primary-blue hover:bg-primary-blue transition-all duration-100 cursor-pointer hover:text-black rounded-full hover:transform hover:scale-110  ' />
+        <AiFillLinkedin className='p-4 mx-2 text-6xl transition-all duration-100 border-2 rounded-full cursor-pointer text-primary-blue border-primary-blue hover:bg-primary-blue hover:text-black hover:transform hover:scale-110 ' />
+        <AiFillGithub className='p-4 mx-2 text-6xl transition-all duration-100 border-2 rounded-full cursor-pointer text-primary-blue border-primary-blue hover:bg-primary-blue hover:text-black hover:transform hover:scale-110 ' />
+        <BsWhatsapp className='p-4 mx-2 text-6xl transition-all duration-100 border-2 rounded-full cursor-pointer text-primary-blue border-primary-blue hover:bg-primary-blue hover:text-black hover:transform hover:scale-110 ' />
+        <MdEmail className='p-4 mx-2 text-6xl transition-all duration-100 border-2 rounded-full cursor-pointer text-primary-blue border-primary-blue hover:bg-primary-blue hover:text-black hover:transform hover:scale-110 ' />
       </div>
     </article>
   );
