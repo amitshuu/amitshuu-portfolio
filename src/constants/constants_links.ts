@@ -2,9 +2,6 @@
 import webDevIcon from '../assets/optimization.png';
 import optimization from '../assets/optimization2.png';
 import shopify from '../assets/shopify.png';
-import { AiFillGithub } from 'react-icons/ai';
-import { BsYoutube } from 'react-icons/bs';
-import { TbWorldWww } from 'react-icons/tb';
 
 //Sub Images
 
@@ -20,7 +17,7 @@ import MessengerApp from '../assets/Main.png';
 import ContactInfoTab from '../assets/ProjectSubImages/MessengerApp/ContactInfoTab.png';
 import ContactRequest from '../assets/ProjectSubImages/MessengerApp/ContactRequest.png';
 import Darkmode from '../assets/ProjectSubImages/MessengerApp/Darkmode.png';
-import Main from '../assets/ProjectSubImages/MessengerApp/Main.png';
+import Main from '../assets/ProjectSubImages/MessengerApp/Main2.png';
 import Profile from '../assets/ProjectSubImages/MessengerApp/Profile.png';
 
 //KidsInMotion
@@ -79,8 +76,6 @@ export const projects_links = [
       {
         websiteUrl: 'https://sneakers-shop.onrender.com/',
         gitRepo: 'https://github.com/amitshuu/sneakers-shop',
-        gitIcon: AiFillGithub,
-        websiteIcon: TbWorldWww,
       },
     ],
   },
@@ -88,30 +83,54 @@ export const projects_links = [
     projectName: 'Messenger App',
     projectDesc:
       'This is a sample application that demonstrates a whatsapp web application using the MERN stack. This web appliaction allow you to search for contacts, add them to your own contact list and start a new chat with them! You can send messages, images, videos, and emojis! Messenger App is a Real Time chat application which getting updated in live using web sockets!',
-    projectImage: MessengerApp,
+    projectImage: Main,
     projectSubImages: [Main, Darkmode, ContactRequest, ContactInfoTab, Profile],
     projectCategory: 'Fullstack Developement',
     usefulLinks: [
       {
         youtubeLink: 'https://www.youtube.com/watch?v=A-z_C_AhsHo',
         gitRepo: 'https://github.com/amitshuu/messenger-app',
-        gitIcon: AiFillGithub,
-        youtubeIcon: BsYoutube,
       },
     ],
   },
   {
     projectName: 'Kids In Motion',
     projectDesc:
-      'I recently designed and built a landing page for a client who runs a business offering kids activities centered around dance. The landing page showcases the unique features of the business and promotes it to potential customers. It includes engaging images and information about the various activities on offer, as well as a clear call-to-action to encourage visitors to sign up. Overall, the landing page provides an effective and visually appealing representation of the client business and its services.',
+      'I designed and built a landing page for a client who offers kids activities focused on dance. The landing page highlights the business unique features and encourages potential customers to sign up. It includes engaging images and information about the activities available, with a clear call-to-action. The page effectively showcases the client business and services in a visually appealing way.',
     projectImage: Yaniv,
     projectSubImages: [Yaniv, Contact, OurActivities, OurCustomer, OurGallery],
     projectCategory: 'Frontend Developement',
     usefulLinks: [
       {
-        websiteUrl: '',
-        websiteIcon: TbWorldWww,
+        websiteUrl: 'https://localhost:3000',
       },
     ],
+  },
+];
+
+export const testimonials_links = [
+  {
+    description:
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta autex cupiditate impedit deleniti placeat expedita error laudantium, esseamet debitis cum blanditiis a voluptates veritatis.Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur, Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur',
+    clientName: 'Moran Weinstein',
+    clientBuisness: 'brillizz.com',
+    clientImage:
+      'https://cdn.shopify.com/s/files/1/0662/8822/2458/files/B.jpg?crop=center&height=32&v=1675440381&width=32',
+  },
+  {
+    description:
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta autex cupiditate impedit deleniti placeat expedita error laudantium, esseamet debitis cum blanditiis a voluptates veritatis.Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur, Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur',
+    clientName: 'Mora Weinstei',
+    clientBuisness: 'brillizz.com',
+    clientImage:
+      'https://cdn.shopify.com/s/files/1/0662/8822/2458/files/B.jpg?crop=center&height=32&v=1675440381&width=32',
+  },
+  {
+    description:
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta autex cupiditate impedit deleniti placeat expedita error laudantium, esseamet debitis cum blanditiis a voluptates veritatis.Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur, Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur',
+    clientName: 'Mo Weinst',
+    clientBuisness: 'brillizz.com',
+    clientImage:
+      'https://cdn.shopify.com/s/files/1/0662/8822/2458/files/B.jpg?crop=center&height=32&v=1675440381&width=32',
   },
 ];
