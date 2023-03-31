@@ -53,7 +53,7 @@ const TestimoialsCarousel = ({
           );
         })}
       </div>
-      <div className='absolute top-0 left-0 right-0 z-50 flex items-center justify-between p-4 md:hidden bottom-20'>
+      <div className='absolute top-0 left-0 right-0 flex items-center justify-between p-4 md:hidden bottom-20'>
         <button
           onClick={handlePrevButton}
           className='text-xl rounded-full shadow text-black/80 w-11 h-11 bg-white/50 '

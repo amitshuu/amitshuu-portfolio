@@ -10,11 +10,11 @@ const ProjectCard = ({ project, handleModal }: Props) => {
   return (
     <article
       onClick={() => handleModal(project)}
-      className='max-w-full px-8 transition-transform cursor-pointer hover:transform hover:scale-105'
+      className='max-w-full px-2 transition-transform cursor-pointer md:px-8 hover:transform hover:scale-105'
     >
       <div className='block w-full h-full max-w-sm overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60'>
         <img
-          className='object-fill object-center w-full lg:h-52 md:h-36 h-36'
+          className='object-fill object-center w-full h-48 lg:h-52 md:h-36'
           src={project.projectImage}
           alt='project image'
         />
