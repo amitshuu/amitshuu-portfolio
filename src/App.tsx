@@ -6,6 +6,7 @@ import ServicesSection from './components/ServicesSection';
 import Testimonials from './components/Testimonials';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 const App = () => {
   return (
     <main className='w-full h-full bg-dark-bg'>
@@ -17,6 +18,7 @@ const App = () => {
       <SkillsSection />
       <Testimonials />
       <ContactSection />
+      <Footer />
     </main>
   );
 };
