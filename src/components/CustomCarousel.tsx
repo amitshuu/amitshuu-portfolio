@@ -10,8 +10,8 @@ const CustomCarousel = ({ children }: { children: any }) => {
       additionalTransfrom={0}
       arrows={true}
       rtl={false}
-      className={` py-6 `}
-      containerClass={` `}
+      className={`w-full py-6 `}
+      containerClass={`w-full `}
       dotListClass='dot'
       draggable={false}
       focusOnSelect={false}
@@ -28,7 +28,7 @@ const CustomCarousel = ({ children }: { children: any }) => {
             min: 1024,
           },
           items: 3,
-          partialVisibilityGutter: 20,
+          partialVisibilityGutter: 40,
         },
         mobile: {
           breakpoint: {
@@ -40,7 +40,7 @@ const CustomCarousel = ({ children }: { children: any }) => {
         },
         tablet: {
           breakpoint: {
-            max: 1200,
+            max: 1300,
             min: 768,
           },
           items: 2,
