@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { AiOutlineClose, AiFillGithub } from 'react-icons/ai';
 import { BsYoutube } from 'react-icons/bs';
 import { TbWorldWww } from 'react-icons/tb';
+import { Link } from 'react-scroll';
 import test from '../assets/Products.png';
 import { IProject } from '../constants/types';
 import ProjectLinks from './ProjectLinks';
@@ -101,9 +102,15 @@ const ProjectModal = ({ isModalOpen, projectDetails, closeModal }: IProps) => {
                 </div>
                 <div className='flex items-center justify-between w-full mt-6'>
                   <p className='text-white text-md'>Feel free to contact me!</p>
-                  <button className='px-6 py-2 text-black transition-all duration-100 rounded-lg xl:px-8 hover:bg-primary-blue-hover bg-primary-blue hover:transform hover:scale-105 '>
+                  <Link
+                    to='contact-section'
+                    smooth={true}
+                    duration={500}
+                    onClick={closeModal}
+                    className='px-6 py-2 text-black transition-all duration-100 rounded-lg xl:px-8 hover:bg-primary-blue-hover bg-primary-blue hover:transform hover:scale-105 '
+                  >
                     Lets Talk
-                  </button>
+                  </Link>
                 </div>
               </div>
             </section>

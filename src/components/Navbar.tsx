@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import MobileMenu from './MobileMenu';
 import { useMobile } from '../hooks/customHooks';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [openMobileNav, setOpenMobileNav] = useState(false);
@@ -30,16 +31,19 @@ const Navbar = () => {
           />
         </div>
         <ul className='hidden px-10 text-lg cursor-pointer md:flex'>
-          {nav_link.map((navLink: { name: string }) => {
+          {nav_link.map((navLink) => {
             return (
-              <li
+              <Link
+                to={navLink.to}
+                duration={500}
+                smooth={true}
                 className={`hover:text-primary-blue px-5 ${
                   navLink.name === 'Home' ? 'text-primary-blue' : 'text-white'
                 }`}
                 key={navLink.name}
               >
                 {navLink.name}
-              </li>
+              </Link>
             );
           })}
         </ul>
