@@ -31,15 +31,19 @@ import Yaniv from '../assets/KidsInMotion.png';
 export const nav_link = [
   {
     name: 'Home',
+    to: 'home',
   },
   {
     name: 'About',
+    to: 'about-section',
   },
   {
     name: 'Projects',
+    to: 'project-section',
   },
   {
     name: 'Contact',
+    to: 'contact-section',
   },
 ];
 
