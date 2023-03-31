@@ -1,10 +1,12 @@
 import shuki_hero_image from '../assets/shuki_hero_image.png';
 import SocialLinks from './SocialLinks';
 import { Typewriter } from 'react-simple-typewriter';
+import { Link } from 'react-scroll';
+import CV from '../assets/Amit_Shukrun_CV.pdf';
 
 const HeroSection = () => {
   return (
-    <section className='flex flex-col xl:flex-row section-center'>
+    <section className='flex flex-col py-2 md:py-10 xl:flex-row section-center'>
       <div className='relative z-10 flex flex-col flex-wrap items-center justify-center w-full pt-10 m-0 xl:items-start '>
         <p className='py-5 text-4xl text-white md:text-5xl'>
           Hello, <span className='text-primary-blue'>I'm</span>
@@ -31,12 +33,21 @@ const HeroSection = () => {
         </p>
         <div className='flex flex-col items-center xl:items-start '>
           <div className='flex flex-row mb-5'>
-            <button className='px-3 py-3 mr-5 text-lg text-black transition-all duration-100 rounded-lg hover:bg-primary-blue-hover bg-primary-blue hover:trasnform hover:scale-105'>
+            <a
+              href={CV}
+              download
+              className='px-3 py-3 mr-5 text-lg text-black transition-all duration-100 rounded-lg hover:bg-primary-blue-hover bg-primary-blue hover:trasnform hover:scale-105'
+            >
               Download CV
-            </button>
-            <button className='px-3 py-3 mr-5 text-lg text-black transition-all duration-100 rounded-lg hover:bg-primary-blue-hover bg-primary-blue hover:transform hover:scale-105 '>
+            </a>
+            <Link
+              to='contact-section'
+              duration={500}
+              smooth={true}
+              className='px-3 py-3 mr-5 text-lg text-black transition-all duration-100 rounded-lg cursor-pointer hover:bg-primary-blue-hover bg-primary-blue hover:transform hover:scale-105 '
+            >
               Let's talk
-            </button>
+            </Link>
           </div>
           <div className='flex justify-center w-full mb-6 xl:mb-0'>
             <SocialLinks />
