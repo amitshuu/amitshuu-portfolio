@@ -7,6 +7,7 @@ type Props = {
 };
 
 const ProjectCard = ({ project, handleModal }: Props) => {
+  const projectCategorySplitted = project.projectCategory.split(' ')[0];
   return (
     <article
       onClick={() => handleModal(project)}
@@ -16,12 +17,12 @@ const ProjectCard = ({ project, handleModal }: Props) => {
         <img
           className='object-fill object-center w-full h-48 lg:h-52 md:h-36'
           src={project.projectImage}
-          alt='project image'
+          alt='project img'
         />
         <div className='h-full bg-dark-bg'>
           <div className='px-5 py-3 md:p-6 '>
-            <h2 className='mb-1 text-xs font-medium tracking-widest text-gray-400 title-font'>
-              FULLSTACK
+            <h2 className='mb-1 text-xs font-medium tracking-widest text-gray-400 uppercase title-font'>
+              {projectCategorySplitted}
             </h2>
             <h1 className='inline-block mb-3 text-lg font-medium text-white border-b-2 title-font border-primary-blue'>
               {project.projectName}
@@ -30,7 +31,7 @@ const ProjectCard = ({ project, handleModal }: Props) => {
               {project.projectDesc}
             </p>
             <div className='flex flex-wrap items-center flex-grow w-full h-full '>
-              <a className='inline-flex items-center transition-colors duration-200 ease-in-out cursor-pointer text-primary-blue md:mb-2 lg:mb-0'>
+              <p className='inline-flex items-center transition-colors duration-200 ease-in-out cursor-pointer text-primary-blue md:mb-2 lg:mb-0'>
                 Learn More
                 <svg
                   className='w-4 h-4 ml-2'
@@ -44,7 +45,7 @@ const ProjectCard = ({ project, handleModal }: Props) => {
                   <path d='M5 12h14'></path>
                   <path d='M12 5l7 7-7 7'></path>
                 </svg>
-              </a>
+              </p>
             </div>
           </div>
         </div>
