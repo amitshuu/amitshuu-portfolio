@@ -13,7 +13,7 @@ import home_page from '../assets/ProjectSubImages/SneakerShop/home_page.png';
 import Header from '../assets/ProjectSubImages/SneakerShop/Header.png';
 
 //- Messenger App
-import MessengerApp from '../assets/Main.png';
+// import MessengerApp from '../assets/Main.png';
 import ContactInfoTab from '../assets/ProjectSubImages/MessengerApp/ContactInfoTab.png';
 import ContactRequest from '../assets/ProjectSubImages/MessengerApp/ContactRequest.png';
 import Darkmode from '../assets/ProjectSubImages/MessengerApp/Darkmode.png';
@@ -27,6 +27,7 @@ import OurActivities from '../assets/ProjectSubImages/KidsInMotion/OurActivities
 import OurCustomer from '../assets/ProjectSubImages/KidsInMotion/OurCustomers.png';
 import OurGallery from '../assets/ProjectSubImages/KidsInMotion/OurGallery.png';
 import Yaniv from '../assets/KidsInMotion.png';
+import YanivLogo from '../assets/ProjectSubImages/KidsInMotion/logoo.png';
 
 export const nav_link = [
   {
@@ -118,7 +119,7 @@ export const projects_links = [
 export const testimonials_links = [
   {
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta autex cupiditate impedit deleniti placeat expedita error laudantium, esseamet debitis cum blanditiis a voluptates veritatis.Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur, Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur',
+      "I had the pleasure of working with Amit on my Shopify store, and I couldn't be happier with the results. They provided invaluable assistance with both styling and coding, and their attention to detail was impressive. Their expertise helped me create a store that is both functional and visually appealing",
     clientName: 'Moran Weinstein',
     clientBuisness: 'brillizz.com',
     clientImage:
@@ -126,18 +127,17 @@ export const testimonials_links = [
   },
   {
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta autex cupiditate impedit deleniti placeat expedita error laudantium, esseamet debitis cum blanditiis a voluptates veritatis.Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur, Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur',
-    clientName: 'Mora Weinstei',
-    clientBuisness: 'brillizz.com',
+      "Working with Amit was a game-changer for my Shopify store. As someone who is not very tech-savvy, I struggled to make my store look professional and polished. But with Amit's help, I was able to achieve the exact look and feel I was going for. From styling to coding, Amit was a true expert, and he patiently walked me through every step of the process",
+    clientName: 'Alphet',
+    clientBuisness: 'alphet.co.il',
     clientImage:
-      'https://cdn.shopify.com/s/files/1/0662/8822/2458/files/B.jpg?crop=center&height=32&v=1675440381&width=32',
+      'https://cdn.shopify.com/s/files/1/0242/6745/6567/files/ALPHETLOGO-favicon-2.jpg?crop=center&height=32&v=1663762159&width=32',
   },
   {
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta autex cupiditate impedit deleniti placeat expedita error laudantium, esseamet debitis cum blanditiis a voluptates veritatis.Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur, Dolore etexplicabo ullam orem, ipsum dolor sit amet consectetur',
-    clientName: 'Mo Weinst',
-    clientBuisness: 'brillizz.com',
-    clientImage:
-      'https://cdn.shopify.com/s/files/1/0662/8822/2458/files/B.jpg?crop=center&height=32&v=1675440381&width=32',
+      "Amit did an amazing job building a landing page for our kids activities business. They took the time to understand our needs and created a page that perfectly captures our brand and mission. We've already seen an increase in inquiries and bookings since the page launched, and we couldn't be happier with the results",
+    clientName: 'Yaniv Sofer',
+    clientBuisness: 'kidsinmotion.co.il',
+    clientImage: YanivLogo,
   },
 ];
