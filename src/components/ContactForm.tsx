@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from '../hooks/customHooks';
 import { fetchEmailJS } from '../utils/emailJS';
-import Alert from './Alert';
 import ContactFormButton from './ContactFormButton';
 import { IAlert } from './ContactSection';
 
@@ -44,7 +43,7 @@ const ContactForm = () => {
     if (alert) {
       const timer = setTimeout(() => {
         setAlert({ alertType: null, alertMessage: null });
-      }, 5000);
+      }, 3000);
       return () => clearTimeout(timer);
     }
   }, [alert]);
@@ -62,7 +61,7 @@ const ContactForm = () => {
               name='name'
               onChange={onChange}
               value={values.name}
-              className='w-full px-3 py-1 text-base leading-8 text-white transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-primary-blue focus:bg-gray-300 focus:text-black'
+              className='w-full px-3 py-1 text-base leading-8 text-black transition-colors duration-200 ease-in-out bg-gray-300 border border-gray-300 rounded outline-none focus:border-primary-blue focus:bg-gray-100 focus:text-black'
             />
           </div>
         </div>
@@ -76,7 +75,7 @@ const ContactForm = () => {
               onChange={onChange}
               id='email'
               name='email'
-              className='w-full px-3 py-1 text-base leading-8 text-white transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-primary-blue focus:bg-gray-300 focus:text-black'
+              className='w-full px-3 py-1 text-base leading-8 text-black transition-colors duration-200 ease-in-out bg-gray-300 border border-gray-300 rounded outline-none focus:border-primary-blue focus:bg-gray-100 focus:text-black'
             />
           </div>
         </div>
@@ -89,7 +88,7 @@ const ContactForm = () => {
               id='message'
               name='message'
               onChange={onChange}
-              className='w-full h-32 px-3 py-1 mb-5 text-base leading-6 text-white transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-primary-blue focus:bg-gray-300 focus:text-black'
+              className='w-full h-32 px-3 py-1 mb-5 text-base leading-6 text-black transition-colors duration-200 ease-in-out bg-gray-300 border border-gray-300 rounded outline-none focus:border-primary-blue focus:bg-gray-100 focus:text-black'
             ></textarea>
           </div>
         </div>
